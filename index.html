@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Sujir Mohan | AI, Cloud & Data Engineering Consultant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B132B',
+                            navy: '#1C2541',
+                            card: '#161F38',
+                            teal: '#00B4D8',
+                            cyan: '#90E0EF',
+                            light: '#F8FAF9',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #00B4D8 0%, #90E0EF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 180, 216, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-teal selection:text-brand-dark">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="text-brand-teal font-mono">&lt;SSM /&gt;</span>
+                <span>Siddharth Sujir</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-teal transition">About</a>
+                <a href="#track-record" class="hover:text-brand-teal transition">Impact</a>
+                <a href="#services" class="hover:text-brand-teal transition">Services</a>
+                <a href="#process" class="hover:text-brand-teal transition">How We Work</a>
+                <a href="#credentials" class="hover:text-brand-teal transition">Credentials</a>
+            </nav>
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-brand-dark bg-brand-teal hover:bg-brand-cyan rounded-lg transition duration-200 shadow-lg shadow-brand-teal/20">
+                Book a Call
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-28 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-teal/10 border border-brand-teal/30 text-brand-teal text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+                    Available for Consulting & Advisory
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+                    Turning AI, Cloud & Data into <span class="gradient-text">Business Advantage</span>
+                </h1>
+                <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+                    From Strategy to Prototype: Practical AI & Cloud Solutions for Growing Businesses. 10+ years building data and cloud systems at enterprise scale — now working directly for you.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-3.5 text-base font-semibold text-brand-dark bg-brand-teal hover:bg-brand-cyan rounded-xl transition duration-200 shadow-xl shadow-brand-teal/20">
+                        <i class="fa-solid me-2 fa-calendar-check"></i> Schedule a Discovery Call
+                    </a>
+                    <a href="#services" class="inline-flex justify-center items-center px-6 py-3.5 text-base font-semibold text-slate-200 bg-brand-navy hover:bg-slate-800 border border-slate-700 rounded-xl transition duration-200">
+                        Explore Services
+                    </a>
+                </div>
+
+                <!-- Enterprise Experience Logos -->
+                <div class="pt-8 border-t border-slate-800">
+                    <p class="text-xs uppercase font-semibold text-brand-muted tracking-wider mb-4">Enterprise Experience at Scale</p>
+                    <div class="flex flex-wrap items-center gap-8 sm:gap-12 opacity-80 hover:opacity-100 transition duration-300">
+                        <!-- Nielsen Logo -->
+                        <div class="h-6 flex items-center">
+                            <span class="font-black tracking-widest text-lg text-slate-300 border-b-2 border-brand-teal pb-0.5">NIELSEN</span>
+                        </div>
+                        <!-- Visa Logo -->
+                        <div class="h-6 flex items-center">
+                            <span class="font-extrabold italic text-xl text-slate-200 tracking-wider">VISA</span>
+                        </div>
+                        <!-- Amazon Music Logo -->
+                        <div class="h-6 flex items-center gap-1">
+                            <i class="fa-brands fa-amazon text-slate-300 text-lg"></i>
+                            <span class="font-bold text-xs uppercase tracking-wider text-slate-300">music</span>
+                        </div>
+                        <!-- Zoom Logo -->
+                        <div class="h-6 flex items-center gap-1.5">
+                            <i class="fa-solid fa-video text-brand-teal text-sm"></i>
+                            <span class="font-extrabold text-lg tracking-tight text-slate-200">zoom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Code / Architecture Mockup -->
+            <div class="lg:col-span-5">
+                <div class="bg-brand-navy border border-slate-700 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-700 mb-4">
+                        <div class="flex space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+                        </div>
+                        <span class="text-xs font-mono text-slate-400">consultant_stack.py</span>
+                    </div>
+                    <pre class="font-mono text-xs sm:text-sm text-slate-300 overflow-x-auto space-y-2">
+<span class="text-brand-teal">class</span> <span class="text-yellow-300">EnterpriseConsultant</span>:
+    <span class="text-brand-teal">def</span> <span class="text-blue-400">__init__</span>(self):
+        self.experience = <span class="text-amber-400">"10+ Years"</span>
+        self.focus = [<span class="text-amber-400">"GenAI"</span>, <span class="text-amber-400">"Cloud"</span>, <span class="text-amber-400">"Data Pipeling"</span>]
+        
+    <span class="text-brand-teal">def</span> <span class="text-blue-400">deliver_value</span>(self, client):
+        <span class="text-brand-teal">return</span> {
+            <span class="text-amber-400">"cost_reduction"</span>: <span class="text-amber-400">"25%"</span>,
+            <span class="text-amber-400">"performance_boost"</span>: <span class="text-amber-400">"40%"</span>,
+            <span class="text-amber-400">"deliverables"</span>: <span class="text-amber-400">"Working Code, No Slideware"</span>
+        }
+
+<span class="text-slate-500"># Ready to scale your technical infrastructure</span>
+consultant = EnterpriseConsultant()
+consultant.deliver_value(your_business)
+</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-brand-navy/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-brand-teal mb-2">About Siddharth</h2>
+                <h3 class="text-3xl font-bold text-white mb-6">Enterprise-Grade Expertise Without Enterprise Overhead</h3>
+                <div class="space-y-4 text-slate-300 leading-relaxed">
+                    <p>
+                        I'm an independent IT consultant helping organizations adopt AI, modernize their cloud infrastructure, and turn raw data into decisions. With over 10 years of hands-on experience building data and cloud systems at global tech companies, I bring deep technical rigor directly to growing businesses.
+                    </p>
+                    <p>
+                        I've led data engineering teams, architected large-scale streaming and batch pipelines, optimized cloud costs by up to 25%, and built Generative AI prototypes from the ground up. Whether training your engineering team, building working AI prototypes, setting up your cloud environment, or designing data solutions — every engagement yields tangible output.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Track Record Section -->
+    <section id="track-record" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-brand-teal mb-2">Proven Metrics</h2>
+            <h3 class="text-3xl sm:text-4xl font-bold text-white">Track Record Highlights</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 card-hover">
+                <div class="text-3xl sm:text-4xl font-extrabold text-brand-teal mb-2">25%</div>
+                <h4 class="text-lg font-semibold text-white mb-2">Cloud Cost Reduction</h4>
+                <p class="text-sm text-slate-400">Optimized AWS resources (EMR, S3, EC2, RDS) for a global audience measurement platform.</p>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 card-hover">
+                <div class="text-3xl sm:text-4xl font-extrabold text-brand-teal mb-2">40%</div>
+                <h4 class="text-lg font-semibold text-white mb-2">Pipeline Speedup</h4>
+                <p class="text-sm text-slate-400">Re-engineered heavy ETL pipelines using Apache Spark and Hive for optimal throughput.</p>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 card-hover">
+                <div class="text-3xl sm:text-4xl font-extrabold text-brand-teal mb-2">Real-Time</div>
+                <h4 class="text-lg font-semibold text-white mb-2">Streaming Migration</h4>
+                <p class="text-sm text-slate-400">Led transition from batch processing to real-time pipelines using Kafka and Apache Spark.</p>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 card-hover">
+                <div class="text-3xl sm:text-4xl font-extrabold text-brand-teal mb-2">GenAI</div>
+                <h4 class="text-lg font-semibold text-white mb-2">Prototypes Shipped</h4>
+                <p class="text-sm text-slate-400">Delivered production GenAI recommendation systems using Python and OpenAI APIs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brand-navy/30 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-brand-teal mb-2">What I Offer</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Consulting Services</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-brand-card border border-slate-800 p-8 rounded-2xl card-hover relative flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 border border-brand-teal/30 flex items-center justify-center text-brand-teal text-xl mb-6">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">1. AI Training for Staff</h4>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Help your technical and non-technical teams understand and deploy AI confidently — no jargon, no fluff.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-400 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Customized hands-on staff workshops</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Tool training (ChatGPT, Claude, Copilot)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Prompt engineering & ethical AI integration</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Role-specific modules (Leadership, Sales, Devs)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brand-card border border-slate-800 p-8 rounded-2xl card-hover relative flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 border border-brand-teal/30 flex items-center justify-center text-brand-teal text-xl mb-6">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">2. AI Use Cases & Prototype Dev</h4>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Turn AI concepts into functional proof-of-concept solutions rapidly to test ROI before heavy investments.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-400 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Industry-specific discovery workshops</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Rapid POC build (weeks, not months)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Modern stack (Python, OpenAI APIs, LLM tooling)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Custom engines for Recommendation & Search</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brand-card border border-slate-800 p-8 rounded-2xl card-hover relative flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 border border-brand-teal/30 flex items-center justify-center text-brand-teal text-xl mb-6">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">3. Cloud Setup & Optimization</h4>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Architect, migrate, and maintain high-reliability cloud infrastructure built to scale seamlessly.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-400 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> AWS Architecture (EC2, S3, EMR, RDS, Redshift)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Cost audit & optimization (up to 25% savings)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Environment security & monitoring</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Scheduled or ongoing retainer support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-brand-card border border-slate-800 p-8 rounded-2xl card-hover relative flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 border border-brand-teal/30 flex items-center justify-center text-brand-teal text-xl mb-6">
+                            <i class="fa-solid fa-chart-diagram"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">4. Data Engineering & Analytics</h4>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Construct high-performance pipelines and data warehouses that power accurate decision-making.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-400 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> ETL/ELT (Apache Spark, Kafka, Airflow, Hive)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Real-time streaming pipeline migration</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> Data Warehousing (Snowflake, Redshift)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal me-2 text-xs"></i> BI dashboards & custom REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Process -->
+    <section id="process" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-brand-teal mb-2">Structured Execution</h2>
+            <h3 class="text-3xl sm:text-4xl font-bold text-white">How We Work Together</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="bg-brand-navy p-6 rounded-xl border border-slate-800">
+                <div class="font-mono text-brand-teal text-xl font-bold mb-3">01 / DISCOVERY</div>
+                <h4 class="text-lg font-bold text-white mb-2">Discovery Call</h4>
+                <p class="text-sm text-slate-400">Deep dive into your business goals, current bottlenecks, and infrastructure needs.</p>
+            </div>
+
+            <div class="bg-brand-navy p-6 rounded-xl border border-slate-800">
+                <div class="font-mono text-brand-teal text-xl font-bold mb-3">02 / PROPOSAL</div>
+                <h4 class="text-lg font-bold text-white mb-2">Assessment & Scope</h4>
+                <p class="text-sm text-slate-400">Receive a transparent, scoped proposal detailing implementation steps, timeline, and cost.</p>
+            </div>
+
+            <div class="bg-brand-navy p-6 rounded-xl border border-slate-800">
+                <div class="font-mono text-brand-teal text-xl font-bold mb-3">03 / BUILD</div>
+                <h4 class="text-lg font-bold text-white mb-2">Build & Train</h4>
+                <p class="text-sm text-slate-400">Hands-on delivery of code, streaming pipelines, trained teams, or cloud architecture.</p>
+            </div>
+
+            <div class="bg-brand-navy p-6 rounded-xl border border-slate-800">
+                <div class="font-mono text-brand-teal text-xl font-bold mb-3">04 / SUPPORT</div>
+                <h4 class="text-lg font-bold text-white mb-2">Support & Iterate</h4>
+                <p class="text-sm text-slate-400">Ongoing maintenance, refine metrics, and complete knowledge transfer to your team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials & Industry Focus -->
+    <section id="credentials" class="py-20 bg-brand-navy/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Academic & Technical Credentials -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-award text-brand-teal"></i> Credentials & Education
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800">
+                            <h4 class="text-white font-semibold">PG Diploma in AI/ML</h4>
+                            <p class="text-sm text-slate-400">IIIT-Bangalore (via UpGrad)</p>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800">
+                            <h4 class="text-white font-semibold">MS in Computer Science</h4>
+                            <p class="text-sm text-slate-400">Arizona State University</p>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800">
+                            <h4 class="text-white font-semibold">BE in Computer Science & Engineering</h4>
+                            <p class="text-sm text-slate-400">Anna University (First Class with Distinction)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industries Served -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-building text-brand-teal"></i> Industries Served
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800 text-center">
+                            <i class="fa-solid fa-rectangle-ad text-brand-teal mb-2 text-xl block"></i>
+                            <span class="text-sm font-medium text-slate-200">Media & Ad-Tech</span>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800 text-center">
+                            <i class="fa-solid fa-building-columns text-brand-teal mb-2 text-xl block"></i>
+                            <span class="text-sm font-medium text-slate-200">BFSI / Payments</span>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800 text-center">
+                            <i class="fa-solid fa-music text-brand-teal mb-2 text-xl block"></i>
+                            <span class="text-sm font-medium text-slate-200">Streaming & Entertainment</span>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800 text-center">
+                            <i class="fa-solid fa-network-wired text-brand-teal mb-2 text-xl block"></i>
+                            <span class="text-sm font-medium text-slate-200">Telecom & SaaS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Call to Action -->
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="bg-gradient-to-r from-brand-navy to-brand-card border border-slate-700 rounded-3xl p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">
+                Let's Build Something Practical.
+            </h2>
+            <p class="text-slate-300 text-lg max-w-2xl mx-auto mb-8">
+                Ready to cut cloud costs, prototype your first GenAI feature, or modernize your data pipelines? Schedule a conversation today.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
+                <a href="mailto:shivaa.siddharth@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-brand-dark bg-brand-teal hover:bg-brand-cyan rounded-xl transition duration-200 shadow-lg shadow-brand-teal/20">
+                    <i class="fa-solid fa-envelope me-2"></i> Send an Email
+                </a>
+                <a href="tel:+918431224768" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-slate-200 bg-brand-navy hover:bg-slate-800 border border-slate-700 rounded-xl transition duration-200">
+                    <i class="fa-solid fa-phone me-2"></i> +91 84312 24768
+                </a>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/80 flex flex-wrap justify-center items-center gap-8 text-sm text-slate-400">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-teal"></i> Bengaluru, India (Remote & Onsite)
+                </span>
+                <a href="https://github.com/siddharthsujir" target="_blank" class="flex items-center gap-2 hover:text-brand-teal transition">
+                    <i class="fa-brands fa-github text-brand-teal"></i> github.com/siddharthsujir
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Siddharth Sujir Mohan. All rights reserved.</p>
+            <p class="font-mono">AI • Cloud • Data Engineering Consultant</p>
+        </div>
+    </footer>
+
+</body>
+</html>
