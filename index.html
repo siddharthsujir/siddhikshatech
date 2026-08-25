@@ -60,7 +60,9 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                <span class="text-brand-teal font-mono">&lt;SSM /&gt;</span>
+<span class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-teal to-blue-600 flex items-center justify-center text-brand-dark font-black font-mono text-sm shadow-md">
+    SSM
+</span>
                 <span>Siddharth Sujir</span>
             </a>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
@@ -126,34 +128,69 @@
                 </div>
             </div>
 
-            <!-- Visual Code / Architecture Mockup -->
+<!-- Executive Business Value Translation -->
             <div class="lg:col-span-5">
                 <div class="bg-brand-navy border border-slate-700 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
-                    <div class="flex items-center justify-between pb-4 border-b border-slate-700 mb-4">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
-                            <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
-                            <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
-                        </div>
-                        <span class="text-xs font-mono text-slate-400">consultant_stack.py</span>
+                    <!-- Header -->
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-700 mb-6">
+                        <span class="text-sm font-semibold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-briefcase text-brand-teal"></i> The Business Value Equation
+                        </span>
+                        <span class="text-[11px] font-mono text-brand-dark bg-brand-teal px-2.5 py-1 rounded-full font-bold">
+                            No Tech Jargon
+                        </span>
                     </div>
-                    <pre class="font-mono text-xs sm:text-sm text-slate-300 overflow-x-auto space-y-2">
-<span class="text-brand-teal">class</span> <span class="text-yellow-300">EnterpriseConsultant</span>:
-    <span class="text-brand-teal">def</span> <span class="text-blue-400">__init__</span>(self):
-        self.experience = <span class="text-amber-400">"10+ Years"</span>
-        self.focus = [<span class="text-amber-400">"GenAI"</span>, <span class="text-amber-400">"Cloud"</span>, <span class="text-amber-400">"Data Pipeling"</span>]
-        
-    <span class="text-brand-teal">def</span> <span class="text-blue-400">deliver_value</span>(self, client):
-        <span class="text-brand-teal">return</span> {
-            <span class="text-amber-400">"cost_reduction"</span>: <span class="text-amber-400">"25%"</span>,
-            <span class="text-amber-400">"performance_boost"</span>: <span class="text-amber-400">"40%"</span>,
-            <span class="text-amber-400">"deliverables"</span>: <span class="text-amber-400">"Working Code, No Slideware"</span>
-        }
 
-<span class="text-slate-500"># Ready to scale your technical infrastructure</span>
-consultant = EnterpriseConsultant()
-consultant.deliver_value(your_business)
-</pre>
+                    <!-- Value Proposition Rows -->
+                    <div class="space-y-4">
+                        <!-- AI Impact -->
+                        <div class="p-4 bg-brand-card rounded-xl border border-slate-800 hover:border-brand-teal/50 transition duration-300 group">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-teal/10 flex items-center justify-center text-brand-teal group-hover:scale-110 transition shrink-0">
+                                    <i class="fa-solid fa-robot text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white mb-1">Generative AI</h4>
+                                    <p class="text-xs text-slate-400 leading-relaxed">
+                                        <strong class="text-slate-300">Your Problem:</strong> Your team is slowed down by repetitive, manual administrative work.<br>
+                                        <strong class="text-brand-cyan">My Solution:</strong> Custom AI tools that automate internal tasks, generate content, and summarize information in seconds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data Impact -->
+                        <div class="p-4 bg-brand-card rounded-xl border border-slate-800 hover:border-brand-teal/50 transition duration-300 group">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-teal/10 flex items-center justify-center text-brand-teal group-hover:scale-110 transition shrink-0">
+                                    <i class="fa-solid fa-chart-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white mb-1">Data Engineering</h4>
+                                    <p class="text-xs text-slate-400 leading-relaxed">
+                                        <strong class="text-slate-300">Your Problem:</strong> Making critical business decisions based on gut-feelings and messy spreadsheets.<br>
+                                        <strong class="text-brand-cyan">My Solution:</strong> Clean, automated dashboards that tell you exactly what's selling, where you are losing money, and how to grow.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cloud Impact -->
+                        <div class="p-4 bg-brand-card rounded-xl border border-slate-800 hover:border-brand-teal/50 transition duration-300 group">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-teal/10 flex items-center justify-center text-brand-teal group-hover:scale-110 transition shrink-0">
+                                    <i class="fa-solid fa-cloud-arrow-up text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white mb-1">Cloud Infrastructure</h4>
+                                    <p class="text-xs text-slate-400 leading-relaxed">
+                                        <strong class="text-slate-300">Your Problem:</strong> Monthly software and hosting bills are unpredictable and out of control.<br>
+                                        <strong class="text-brand-cyan">My Solution:</strong> A lean, optimized digital foundation that scales seamlessly with your business while cutting unnecessary costs by up to 25%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -380,6 +417,10 @@ consultant.deliver_value(your_business)
                             <i class="fa-solid fa-network-wired text-brand-teal mb-2 text-xl block"></i>
                             <span class="text-sm font-medium text-slate-200">Telecom & SaaS</span>
                         </div>
+                        <div class="bg-brand-card p-4 rounded-xl border border-slate-800 text-center">
+                            <i class="fa-solid fa-network-wired text-brand-teal mb-2 text-xl block"></i>
+                            <span class="text-sm font-medium text-slate-200">Manufacturing</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -397,7 +438,7 @@ consultant.deliver_value(your_business)
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
-                <a href="mailto:shivaa.siddharth@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-brand-dark bg-brand-teal hover:bg-brand-cyan rounded-xl transition duration-200 shadow-lg shadow-brand-teal/20">
+                <a href="mailto:siddhikshas2024@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-brand-dark bg-brand-teal hover:bg-brand-cyan rounded-xl transition duration-200 shadow-lg shadow-brand-teal/20">
                     <i class="fa-solid fa-envelope me-2"></i> Send an Email
                 </a>
                 <a href="tel:+918431224768" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-slate-200 bg-brand-navy hover:bg-slate-800 border border-slate-700 rounded-xl transition duration-200">
